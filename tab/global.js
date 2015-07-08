@@ -1,5 +1,3 @@
-
-
 var tabLinks = new Array();
 var contentDivs = new Array();
 
@@ -22,8 +20,9 @@ function init() {
     tabLinks[id].onfocus = function() {
       this.blur()
     };
-    if ( i == 0 ) tabLinks[id].className = 'selected';
-    i++;
+    if ( i == 0 ) {
+      tabLinks[id].className = 'selected';
+      i++;
     }
     // Hide all content divs except the first
     var i = 0;
@@ -32,33 +31,35 @@ function init() {
       i++;
     }
   }
+}
 
-    function showTab() {
-      var selectedId = getHash( this.getAttribute('href') );
-
-      // Highlight the selected tab, and dim all others.
-      // Also show the selected content div, and hide all others.
-      for ( var id in contentDivs ) {
-        if ( id == selectedId ) {
-          tabLinks[id].className = 'selected';
-          contentDivs[id].className = 'tabContent';
-        } else {
-          tabLinks[id].className = '';
-          contentDivs[id].className = 'tabContent hide';
-        }
-      }
-
-      // Stop the browser following the link
-      return false;
+function showTab() {
+  var selectedId = getHash( this.getAttribute('href') );
+  // Highlight the selected tab, and dim all others.
+  // Also show the selected content div, and hide all others.
+  for ( var id in contentDivs ) {
+    if ( id == selectedId ) {
+      tabLinks[id].className = 'selected';
+      contentDivs[id].className = 'tabContent';
     }
-
-    function getFirstChildWithTagName( element, tagName ) {
-      for ( var i = 0; i < element.childNodes.length; i++ ) {
-        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
-      }
+    else {
+      tabLinks[id].className = '';
+      contentDivs[id].className = 'tabContent hide';
     }
+  }
+  // Stop the browser following the link
+  return false;
+}
 
-    function getHash( url ) {
-      var hashPos = url.lastIndexOf ( '#' );
-      return url.substring( hashPos + 1 );
+function getFirstChildWithTagName( element, tagName ) {
+  for ( var i = 0; i < element.childNodes.length; i++ ) {
+    if ( element.childNodes[i].nodeName == tagName ) {
+      return element.childNodes[i];
     }
+  }
+}
+
+function getHash( url ) {
+  var hashPos = url.lastIndexOf ( '#' );
+  return url.substring( hashPos + 1 );
+}
