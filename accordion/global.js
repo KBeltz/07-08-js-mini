@@ -1,5 +1,6 @@
 var personItems = new Array();
 
+
 function init() {
   // Grab the person items from the page
     var divs = document.getElementsByClassName( 'personItem' );
