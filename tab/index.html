@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Tabs</title>
+    <link rel="stylesheet" href="global.css">
+  </head>
+  <body onload="init()">
+    <!-- links to each tab content div so that each tab will show -->
+    <!-- the appropriate content when clicked -->
+    <ul id="tabs">
+      <li><a href="#about">About JavaScript tabs</a></li>
+      <li><a href="#advantages">Advantages of tabs</a></li>
+      <li><a href="#usage">Using tabs</a></li>
+    </ul>
+    <!-- first tab content -->
+    <div class="tabContent" id="about">
+      <h2>About JavaScript tabs</h2>
+      <div>
+        <p>JavaScript tabs partition your Web page content into tabbed sections. Only one section at a time is visible.</p>
+        <p>The code is written in such a way that the page degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+      </div>
+    </div>
+    <!-- second tab content -->
+    <div class="tabContent" id="advantages">
+      <h2>Advantages of tabs</h2>
+      <div>
+        <p>Tabs are rad.</p>
+      </div>
+    </div>
+    <!-- third tab content -->
+    <div class="tabContent" id="usage">
+      <h2>Using tabs</h2>
+      <div>
+        <p>USING ALL THE TABS!!!</p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="global.js"></script>
+  </body>
+</html>
