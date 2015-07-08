@@ -1,0 +1,37 @@
+#top_bar {
+  background: #2C4947;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  font-family: fantasy;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+#content {
+  float: left;
+  position: absolute;
+  top: 10%;
+  clear: both;
+}
+
+#top_bar.smaller {
+    height: 40px;
+}
+
+@media all and (max-width: 660px) {
+  #top_bar.smaller {
+      height: 40px;
+  }
+}
