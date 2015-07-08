@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="global.css">
   </head>
   <body>
-    <h1>Modal Window Goodness</h1>
-
-    <a href='#' onclick='overlay()'>Click here to deploy the Charm Bomb</a>
+    <div id="main">
+      <h1>Charm Bomb</h1>
+      <a href='#' onclick='overlay()'>
+        <img id= "bomb" src="./assets/bomb.png">
+      </a>
+    </div>
 
     <div id="overlay">
      <div>
-          <img src="./assets/charm-bomb.gif">
-          <a href='#' onclick='overlay()'>x</a>
+       <a href='#' onclick='overlay()'>x</a>
+       <img src="./assets/charm-bomb.gif">
      </div>
    </div>
 
