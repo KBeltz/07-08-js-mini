@@ -1,7 +1,7 @@
 function init() {
     window.addEventListener('scroll', function(e) {
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300,
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+            var shrinkOn = 300;
             //Returns the first element within the document (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
             topBar = document.querySelector("top_bar");
         if (distanceY > shrinkOn) {
