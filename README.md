@@ -10,12 +10,13 @@ Put all of the mini-exercises in their own folder, but keep all of the folders w
 
 ~/Code/
 07-08-javascript-mini-exercises/
-tabs/
-barcamp-mobile-nav/
-accordion/
-modal-window/
-auto-tab-phone-number/
-sticky-shrinking-header/
+*tabs/
+*barcamp-mobile-nav/
+*accordion/
+*modal-window/
+*auto-tab-phone-number/
+*sticky-shrinking-header/
+
 With all of the below tasks, the screen recording is meant to serve as a guide (except for the Barcamp Mobile Nav one). Don't get caught up on the minor details of the style and/or effect. Focus on the spirit of the interaction (e.g. with the Accordion task, the important part is that clicking a header reveals content below it - not that the headers have a black background and white text).
 
 ##Tabs
