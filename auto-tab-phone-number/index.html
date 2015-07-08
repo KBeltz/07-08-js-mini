@@ -1,0 +1,19 @@
+<!doctype html>
+  <html>
+  <head>
+    <title>Autotab Phone Number</title>
+    <link rel="stylesheet" href="global.css">
+  </head>
+
+  <body>
+    <h2>Enter your 10-digit phone number:</h2>
+    <br>
+    <form name="phone" method="post">
+      <input type="text" name="area" size=4 onKeyup="autotab(this, document.phone.prefix)" maxlength=3>
+      <input type="text" name="prefix" size=4 onKeyup="autotab(this, document.phone.last)" maxlength=3> 
+      <input type="text" name="last" size=5 maxlength=4>
+    </form>
+
+    <script type="text/javascript" src="global.js"></script>
+  </body>
+</html>
