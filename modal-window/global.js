@@ -1,11 +1,18 @@
 var overlay = document.getElementById("overlay");
 var main = document.getElementById("main");
+var bomb = document.getElementById("bomb");
+var exit = document.getElementById("exit");
+
+bomb.onclick = show;
+exit.onclick = close;
 
 // Function to show overlay window
 function show() {
-  overlay.getElementById("overlay").style.visibility = "visible";
-	main.getElementById("main").style.visibility = "hidden";
+  overlay.style.visibility = "visible";
+	main.style.visibility = "hidden";
 }
 
-// Function to add event listener
-overlay.addEventListener("click", function(){show()}, false);
+function close() {
+	overlay.style.visibility = "hidden";
+	main.style.visibility = "visible";
+}
