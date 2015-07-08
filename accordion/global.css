@@ -1,6 +1,6 @@
-body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
-.personItem h2 { margin: 0; font-size: 1.1em; padding: 0.4em; color: #fff; background-color: #944; border-bottom: 1px solid #66d; }
+body { font-size: 80%; font-family: Arial; }
+.personItem h2 { margin: 0; font-size: 2em; padding: 0.5em; color: white; background-color: black; border-bottom: 1px solid #FF33FF; }
 .personItem h2:hover { cursor: pointer; }
-.personItem div { margin: 0; padding: 1em 0.4em; background-color: #eef; border-bottom: 1px solid #66d; }
-.personItem.hide h2 { color: #000; background-color: #88f; }
+.personItem div { margin: 0; padding: 1.5em 0.5em; background-color: #FF33FF;}
+.personItem.hide h2 { color: white; background-color: black; }
 .personItem.hide div { display: none; }
