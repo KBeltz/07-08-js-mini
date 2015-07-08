@@ -1,8 +1,11 @@
+var overlay = document.getElementById("overlay");
+var main = document.getElementById("main");
 
-function overlay() {
-	cb = document.getElementById("overlay");
-	cb.style.visibility = (cb.style.visibility == "visible") ? "hidden" : "visible";
-
-	main = document.getElementById("main");
-	main.style.visibility = (main.style.visibility = "hidden");
+// Function to show overlay window
+function show() {
+  overlay.getElementById("overlay").style.visibility = "visible";
+	main.getElementById("main").style.visibility = "hidden";
 }
+
+// Function to add event listener
+overlay.addEventListener("click", function(){show()}, false);
