@@ -1,21 +1,21 @@
-var accordionItems = new Array();
+var personItems = new Array();
 
 function init() {
-  // Grab the accordion items from the page
+  // Grab the person items from the page
     var divs = document.getElementsByTagName( 'div' );
     for ( var i = 0; i < divs.length; i++ ) {
-      if ( divs[i].className == 'accordionItem' ) accordionItems.push( divs[i] );
+      if ( divs[i].className == 'personItem' ) personItems.push( divs[i] );
     }
 
-  // Assign onclick events to the accordion item headings
-  for ( var i = 0; i < accordionItems.length; i++ ) {
-    var h2 = getFirstChildWithTagName( accordionItems[i], 'H2' );
+  // Assign onclick events to the person item headings
+  for ( var i = 0; i < personItems.length; i++ ) {
+    var h2 = getFirstChildWithTagName( personItems[i], 'H2' );
     h2.onclick = toggleItem;
   }
 
-  // Hide all accordion item bodies except the first
-  for ( var i = 1; i < accordionItems.length; i++ ) {
-    accordionItems[i].className = 'accordionItem hide';
+  // Hide all person item bodies except the first
+  for ( var i = 1; i < personItems.length; i++ ) {
+    personItems[i].className = 'personItem hide';
   }
 }
 
@@ -24,13 +24,13 @@ function toggleItem() {
   var itemClass = this.parentNode.className;
 
   // Hide all items
-  for ( var i = 0; i < accordionItems.length; i++ ) {
-    accordionItems[i].className = 'accordionItem hide';
+  for ( var i = 0; i < personItems.length; i++ ) {
+    personItems[i].className = 'personItem hide';
   }
 
   // Show this item if it was previously hidden
-  if ( itemClass == 'accordionItem hide' ) {
-    this.parentNode.className = 'accordionItem';
+  if ( itemClass == 'personItem hide' ) {
+    this.parentNode.className = 'personItem';
 
   }
 }
