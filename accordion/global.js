@@ -2,9 +2,9 @@ var personItems = new Array();
 
 function init() {
   // Grab the person items from the page
-    var divs = document.getElementsByTagName( 'div' );
+    var divs = document.getElementsByClassName( 'personItem' );
     for ( var i = 0; i < divs.length; i++ ) {
-      if ( divs[i].className == 'personItem' ) personItems.push( divs[i] );
+      personItems.push( divs[i] );
     }
 
   // Assign onclick events to the person item headings
