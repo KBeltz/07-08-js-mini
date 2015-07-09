@@ -16,10 +16,6 @@ body{ margin: 0px; text-align: center; }
   box-shadow: 0px 1px 3px #000;
 }
 
-#menu {
-  box-shadow: 0px 1px 3px #000;
-}
-
 #pagetop > #menu{
 	position: absolute;
 	bottom: 0px;

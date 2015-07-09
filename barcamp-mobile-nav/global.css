@@ -1,0 +1,222 @@
+/* General  Styles ----------------------------------------------------------- */
+.clearfix {
+    overflow: auto;
+}
+
+/* Fonts --------------------------------------------------------------------- */
+h1 {
+  margin: 10px 0;
+  font-family: "Rokkit", serif;
+  color: #2B4847;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: "Rokkit", serif;
+  color: #2B4847;
+}
+
+h3 {
+  float: left;
+  margin: 0;
+  font-family: "Rokkit", serif;
+  font-size: 60px;
+  color: #6BA236;
+}
+
+h4 {
+  float: left;
+  margin: 0;
+  font-family: "Rokkit", serif;
+  font-size: 40px;
+  color: #6BA236;
+}
+
+h5 {
+  font-size: 28px;
+  color: #394B63;
+  line-height: 40px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 25px;
+  color: #6BA236;
+}
+
+
+p {
+  font-size: 16px;
+  color: #394B63;
+  line-height: 30px;
+}
+
+.type p {
+  color: #6C5029;
+}
+
+
+/* Header Bar -------------------------------- */
+.barcamp-logo {
+  padding: 10px 0 10px 10px;
+  background: #2B4847;
+}
+
+.barcamp-logo__graphic {
+  width: 200px;
+}
+
+.barcamp-logo__menu {
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+#nav_menu {
+  display: none;
+  padding: 10px 0 10px 10px;
+  background: #2B4847;
+  width: 275px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 23%;
+  top: 0;
+  z-index: 999;
+
+  animation-duration: 2s;
+  animation-name: slidein;
+
+  overflow: hidden;
+  box-shadow: 0px 3px 5px #000;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    height: 0;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 300px;
+  }
+}
+
+/* Header Scene------------------------------- */
+.header-image {
+  position: relative;
+  height: 600px;
+  background: url('assets/trees.png'), url('assets/lake.png'), url('assets/mountains.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+}
+
+.header-image__container {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.header-image__hero-logo {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.header-image__date {
+  width: 70%
+}
+
+
+/* AIGA Bar ---------------------------------- */
+.aiga {
+  padding: 5px 0;
+  background:#2B4847;
+  text-align: center;
+}
+
+.aiga-graphic {
+  width: 90%;
+  max-width: 350px;
+}
+
+
+/*Top Register Button ----------------------- */
+.register {
+  height: 155px;
+  max-width: 500px;
+  margin: 75px auto;
+  background: url('assets/buttonLines.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  text-align: center;
+}
+
+.register__bird {
+  width: 10%;
+  margin-bottom: -5px;
+}
+
+.register__button {
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #6BA236;
+  font-size: 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+.register__price {
+  width: 100px;
+  margin: 0 auto;
+}
+
+/* INTRO ----------------------------------- */
+.intro {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.divider {
+  height: 15px;
+  border-top: dashed 4px #DBD2CB;
+  margin: 100px 0;
+}
+
+/* Talk-Types ------------------------------ */
+.talk-types {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.graphic {
+  width: 60%;
+  max-width: 250px;
+}
+
+/*.entrepreneur,
+.creative,
+.technology,
+.kitchen-sink {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid 2px #DBD2CB;
+}*/
+
+.talk-type {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid 2px #DBD2CB;
+}
+
+.talk-type--bottom {
+  border-bottom: none;
+}
+
+.talk-type--top {
+  margin-top: 100px;
+}
