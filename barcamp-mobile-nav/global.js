@@ -12,3 +12,5 @@ function toggleContent() {
 drop_menu.onclick = toggleContent;
 
 navMenu.className = "slidein";
+
+//still need to implement a "slideout" keyframe
