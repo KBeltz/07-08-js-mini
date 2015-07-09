@@ -12,7 +12,12 @@ body{ margin: 0px; text-align: center; }
   font-family: monospace;
 	padding-top: 50px;
 	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
-	overflow:hidden;
+	overflow: hidden;
+  box-shadow: 0px 1px 3px #000;
+}
+
+#menu {
+  box-shadow: 0px 1px 3px #000;
 }
 
 #pagetop > #menu{
